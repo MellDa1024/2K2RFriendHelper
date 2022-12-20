@@ -1,11 +1,9 @@
 {
-  "name": "ExamplePlugin",
+  "name": "2K2RFriendHelper",
   "version": "${version}",
-  "description": "Example implementation of a plugin for Lambda.",
-  "url": "https://github.com/lambda-client/ExamplePlugin",
-  "authors": [ "me", "you" ],
-  "main_class": "com.lambda.ExamplePlugin",
-  "min_api_version": "3.2",
-  "mixins": [ "mixins.ExamplePlugin.json" ],
-  "required_plugins": []
+  "description": "Adds 2K2R Member to friend with Data.json",
+  "url": "https://github.com/MellDa1024/2K2RFriendHelper",
+  "authors": [ "Mell_Da" ],
+  "main_class": "com.mellda.TwoKTwoRPlugin",
+  "min_api_version": "3.2"
 }

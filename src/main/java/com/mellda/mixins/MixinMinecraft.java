@@ -1,4 +1,4 @@
-package com.lambda.mixins;
+package com.mellda.mixins;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
