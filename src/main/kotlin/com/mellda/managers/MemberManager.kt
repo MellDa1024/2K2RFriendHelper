@@ -34,6 +34,18 @@ object MemberManager : Manager {
                     } ?: MessageSendHelper.sendChatMessage("$prefix $uuid is not a valid UUID.")
                     delay(500L)
                 }
+                for (uuid in memberFile.blacklist) {
+                    UUIDUtils.fixUUID(uuid)?.let{ fixedUUID ->
+                        UUIDManager.getByUUID(fixedUUID)?.let {
+                            if (FriendManager.isFriend(it.name)){
+                                if(FriendManager.removeFriend(it.name)){
+                                    MessageSendHelper.sendChatMessage("$prefix blacklisted &4${it.name}&r has been removed.")
+                                }
+                            }
+                        } ?: MessageSendHelper.sendChatMessage("$prefix There aren't any player who has UUID \"${fixedUUID}\".")
+                    } ?: MessageSendHelper.sendChatMessage("$prefix $uuid is not a valid UUID.")
+                    delay(500L)
+                }
                 MessageSendHelper.sendChatMessage("$prefix Done!")
             }
             true
