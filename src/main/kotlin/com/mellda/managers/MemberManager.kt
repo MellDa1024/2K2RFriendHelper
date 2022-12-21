@@ -56,6 +56,7 @@ object MemberManager : Manager {
     }
 
     data class MemberFile(
-        val members: MutableSet<String> = LinkedHashSet<String>().synchronized()
+        val members: MutableSet<String> = LinkedHashSet<String>().synchronized(),
+        val blacklist: MutableSet<String> = LinkedHashSet<String>().synchronized()
     )
 }

@@ -3,7 +3,7 @@
   "version": "${version}",
   "description": "Adds 2K2R Member to friend with Data.json",
   "url": "https://github.com/MellDa1024/2K2RFriendHelper",
-  "authors": [ "Mell_Da" ],
+  "authors": ["Mell_Da", "kdh8219"],
   "main_class": "com.mellda.TwoKTwoRPlugin",
   "min_api_version": "3.2"
 }
